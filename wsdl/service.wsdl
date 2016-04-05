@@ -109,10 +109,10 @@
   </wsdl:binding>
   <wsdl:service name="Service1">
     <wsdl:port name="Service1Soap" binding="tns:Service1Soap">
-      <soap:address location="http://localhost:8000/wsdl" />
+      <soap:address location="http://testing.drivetech.cl:8000/wsdl" />
     </wsdl:port>
     <wsdl:port name="Service1Soap12" binding="tns:Service1Soap12">
-      <soap12:address location="http://localhost:8000/wsdl" />
+      <soap12:address location="http://testing.drivetech.cl:8000/wsdl" />
     </wsdl:port>
   </wsdl:service>
 </wsdl:definitions>
