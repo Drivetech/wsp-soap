@@ -13,7 +13,9 @@
     "clean": "rimraf dist",
     "pretest": "npm run build -s",
     "test": "mocha --compilers js:babel-core/register",
-    "docker-test": "mocha --compilers js:babel-core/register"
+    "docker-test": "mocha --compilers js:babel-core/register",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -29,7 +31,8 @@
   },
   "homepage": "https://github.com/lgaticaq/wsp-soap#readme",
   "dependencies": {
-    "soap": "^0.18.0"
+    "soap": "^0.18.0",
+    "snyk": "^1.21.2"
   },
   "devDependencies": {
     "babel-cli": "^6.18.0",
@@ -73,5 +76,6 @@
     "presets": [
       "es2015"
     ]
-  }
+  },
+  "snyk": true
 }
