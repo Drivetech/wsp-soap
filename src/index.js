@@ -1,9 +1,9 @@
 'use strict';
 
-import http from 'http';
-import fs from 'fs';
-import path from 'path';
-import soap from 'soap';
+const http = require('http');
+const fs = require('fs');
+const path = require('path');
+const {soap} = require('strong-soap');
 
 const result = {
   Inserta_GPSResult: {

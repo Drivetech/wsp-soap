@@ -1,8 +1,8 @@
 'use strict';
 
-import {expect} from 'chai';
-import soap from 'soap';
-import '../src';
+const {expect} = require('chai');
+const {soap} = require('strong-soap');
+require('../src');
 
 describe('wsp', function() {
   this.timeout(20000);
@@ -10,11 +10,14 @@ describe('wsp', function() {
   const url = 'http://localhost:8000/wsdl?wsdl';
 
   before(done => {
-    soap.createClient(url, (err, client) => {
-      if (err) throw err;
-      _client = client;
-      done();
-    });
+    setTimeout(() => {
+      console.log(url);
+      soap.createClient(url, (err, client) => {
+        if (err) throw err;
+        _client = client;
+        done();
+      });
+    }, 1000);
   });
 
   it('send gps data', done => {
