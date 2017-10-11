@@ -1,4 +1,4 @@
-FROM mhart/alpine-node:5
+FROM mhart/alpine-node:5@sha256:f8f781dcccef9740ada3ef1c76810a7a69555ddd81cb5af6890c4e1f2fcdbc2e
 
 MAINTAINER Leonardo Gatica <lgatica@protonmail.com>
 
