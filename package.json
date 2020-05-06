@@ -9,7 +9,9 @@
     "lint": "eslint src",
     "pretest": "npm run lint -s",
     "test": "mocha",
-    "docker-test": "mocha"
+    "docker-test": "mocha",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -25,7 +27,8 @@
   },
   "homepage": "https://github.com/lgaticaq/wsp-soap#readme",
   "dependencies": {
-    "strong-soap": "^1.1.0"
+    "strong-soap": "^1.1.0",
+    "snyk": "^1.319.0"
   },
   "devDependencies": {
     "chai": "4.2.0",
@@ -57,5 +60,6 @@
         "always"
       ]
     }
-  }
+  },
+  "snyk": true
 }
