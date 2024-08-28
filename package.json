@@ -28,7 +28,7 @@
     "strong-soap": "^1.1.0"
   },
   "devDependencies": {
-    "chai": "4.2.0",
+    "chai": "4.5.0",
     "eslint": "4.19.1",
     "mocha": "5.1.1"
   },
